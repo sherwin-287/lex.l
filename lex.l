@@ -60,8 +60,6 @@ FLOAT_CONST {DIGIT}+"."{DIGIT}+
 
 int main()
 {
-    printf("Lexical Analysis Start.\n\n");
-    yylex();
-    printf("\nLexical Analysis Complete.\n");
-    return 0;
+  yylex();
+return 0;
 }
