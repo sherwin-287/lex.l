@@ -13,7 +13,7 @@ INT_CONST  {DIGIT}+
 FLOAT_CONST {DIGIT}+"."{DIGIT}+
 
 %%
-"int"      { printf("Keyword : int\n"); }
+"int"      { printf('Keyword : int\n'); }
 "float"    { printf("Keyword : float\n"); }
 "if"       { printf("Keyword : if\n"); }
 "else"     { printf("Keyword : else\n"); }
@@ -64,7 +64,7 @@ FLOAT_CONST {DIGIT}+"."{DIGIT}+
 
 int main()
 {
-    printf("Lexical Analysis Start...\n\n");
+    printf("Lexical Analysis Start.\n\n");
     yylex();
     printf("\nLexical Analysis Complete.\n");
     return 0;
