@@ -55,7 +55,7 @@ FLOAT_CONST {DIGIT}+"."{DIGIT}+
 
 
 [ \t]+  { /* ignore spaces */ }
-\n   {line++; }
+\n   {line_no++; }
 
 
 .{ printf("Lexical Error at line %d : %s\n", line_no, yytext); }
