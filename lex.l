@@ -13,7 +13,7 @@ INT_CONST  {DIGIT}+
 FLOAT_CONST {DIGIT}+"."{DIGIT}+
 
 %%
-"int"      { printf('Keyword : int\n'); }
+"int"      { printf("Keyword : int\n"); }
 "float"    { printf("Keyword : float\n"); }
 "if"       { printf("Keyword : if\n"); }
 "else"     { printf("Keyword : else\n"); }
@@ -42,8 +42,8 @@ FLOAT_CONST {DIGIT}+"."{DIGIT}+
 
 
 ";"        { printf("Delimiter : ;\n"); }
-"{"        { printf("Left Brace : {\n"); }
-"}"        { printf("Right Brace : }\n"); }
+"{"        { printf("Left Bracekets : {\n"); }
+"}"        { printf("Right Bracekets : }\n"); }
 "("        { printf("Left Parenthesis : (\n"); }
 ")"        { printf("Right Parenthesis : )\n"); }
 
@@ -54,7 +54,7 @@ FLOAT_CONST {DIGIT}+"."{DIGIT}+
 {IDENT}    { printf("Identifier (%s)\n", yytext); }
 
 
-[ \t]+  { /* ignore spaces */ }
+[ \t]+  {/* ignore whitespace */}
 \n   {line_no++; }
 
 
